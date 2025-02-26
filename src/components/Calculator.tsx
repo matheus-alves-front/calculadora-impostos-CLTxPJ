@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import TaxTables from "./TaxTables";
 import { getINSS, getIRRF, getPJTaxes } from "@/utils/calculators";
 import Image from "next/image";
+import { GoogleAds } from "./GoogleAds";
 
 const SalaryCalculator: React.FC = () => {
   const [salary, setSalary] = useState<number | string>("");
@@ -41,6 +42,9 @@ const SalaryCalculator: React.FC = () => {
         placeholder="Digite seu salário bruto"
         className="p-2 border border-gray-300 rounded mb-4 w-64 text-center"
       />
+      <div className="bg-gray-400 p-2 mb-4">
+        <GoogleAds />
+      </div>
 
         <div className="w-full max-w-md p-4 bg-white rounded shadow-md">
           <h2 className="text-lg font-semibold mb-2">Resultados:</h2>

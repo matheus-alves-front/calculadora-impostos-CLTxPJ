@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { INSS_TABLE, IRRF_TABLE, SIMPLES_NACIONAL_TABLE } from "@/utils/calculators";
+import { GoogleAds } from "./GoogleAds";
 
 const formatCurrency = (value: number) => `R$ ${value.toFixed(2)}`;
 
@@ -29,6 +30,10 @@ const TaxTables = ({children}: {children: ReactNode}) => {
         </table>
       </div>
 
+      <div className="bg-gray-400 p-2 mb-4">
+        <GoogleAds />
+      </div>
+      
       {/* Tabela IRRF */}
       <div className="w-full max-w-lg p-4 bg-white rounded shadow-md mb-4">
         <h2 className="text-lg font-semibold mb-2">📌 Tabela IRRF 2024</h2>
