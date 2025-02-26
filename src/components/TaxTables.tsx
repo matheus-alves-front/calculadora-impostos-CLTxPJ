@@ -11,7 +11,7 @@ const TaxTables = () => {
       <Link href={'/'} className="p-2 block bg-blue-600/90 rounded text-white mb-4">Ver Calculadora</Link>
       {/* Tabela INSS */}
       <div className="w-full max-w-lg p-4 bg-white rounded shadow-md mb-4">
-        <h2 className="text-lg font-semibold mb-2">📌 Tabela INSS 2024</h2>
+        <h2 className="text-lg font-semibold mb-2">📌 Tabela INSS 2025</h2>
         <table className="w-full border-collapse border border-gray-300">
           <thead>
             <tr className="bg-gray-200">
@@ -32,7 +32,7 @@ const TaxTables = () => {
 
       {/* Tabela IRRF */}
       <div className="w-full max-w-lg p-4 bg-white rounded shadow-md mb-4">
-        <h2 className="text-lg font-semibold mb-2">📌 Tabela IRRF 2024</h2>
+        <h2 className="text-lg font-semibold mb-2">📌 Tabela IRRF 2025</h2>
         <table className="w-full border-collapse border border-gray-300">
           <thead>
             <tr className="bg-gray-200">
@@ -55,7 +55,7 @@ const TaxTables = () => {
 
       {/* Tabela Simples Nacional */}
       <div className="w-full max-w-lg p-4 bg-white rounded shadow-md mb-4">
-        <h2 className="text-lg font-semibold mb-2">📌 Tabela Simples Nacional 2024</h2>
+        <h2 className="text-lg font-semibold mb-2">📌 Tabela Simples Nacional 2025</h2>
         <table className="w-full border-collapse border border-gray-300">
           <thead>
             <tr className="bg-gray-200">
@@ -75,6 +75,11 @@ const TaxTables = () => {
           </tbody>
         </table>
       </div>
+
+      <p>Fonte:</p>
+      <a className="text-blue-500" href={'https://www.pontotel.com.br/calcular-irrf/#:~:text=Para%20fazer%20esse%20c%C3%A1lculo%20%C3%A9,a%20ser%20deduzida%20do%20imposto.'}>
+       https://www.pontotel.com.br/
+      </a>
 
       <Link href={'/'} className="p-2 block bg-blue-600/90 rounded text-white mt-4">Ver Calculadora</Link>
     </div>
