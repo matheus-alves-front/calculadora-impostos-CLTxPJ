@@ -1,14 +1,14 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { INSS_TABLE, IRRF_TABLE, SIMPLES_NACIONAL_TABLE } from "@/utils/calculators";
-import { GoogleAds } from "./GoogleAds";
+import Link from "next/link";
 
 const formatCurrency = (value: number) => `R$ ${value.toFixed(2)}`;
 
-const TaxTables = ({children}: {children: ReactNode}) => {
+const TaxTables = () => {
   return (
     <div className="flex flex-col items-center p-4 bg-gray-100 min-h-screen">
       <h1 className="text-2xl font-bold mb-4">Tabelas de Impostos 2025</h1>
-      {children}
+      <Link href={'/'} className="p-2 block bg-blue-600/90 rounded text-white mb-4">Ver Calculadora</Link>
       {/* Tabela INSS */}
       <div className="w-full max-w-lg p-4 bg-white rounded shadow-md mb-4">
         <h2 className="text-lg font-semibold mb-2">📌 Tabela INSS 2024</h2>
@@ -30,10 +30,6 @@ const TaxTables = ({children}: {children: ReactNode}) => {
         </table>
       </div>
 
-      <div className="bg-gray-400 p-2 mb-4">
-        <GoogleAds />
-      </div>
-      
       {/* Tabela IRRF */}
       <div className="w-full max-w-lg p-4 bg-white rounded shadow-md mb-4">
         <h2 className="text-lg font-semibold mb-2">📌 Tabela IRRF 2024</h2>
@@ -79,7 +75,8 @@ const TaxTables = ({children}: {children: ReactNode}) => {
           </tbody>
         </table>
       </div>
-      {children}
+
+      <Link href={'/'} className="p-2 block bg-blue-600/90 rounded text-white mt-4">Ver Calculadora</Link>
     </div>
   );
 };
