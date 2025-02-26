@@ -35,7 +35,7 @@ export default function TaxTablesPage() {
       <TaxTables />
 
       <Script
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2685638626889608"
         crossOrigin="anonymous"
